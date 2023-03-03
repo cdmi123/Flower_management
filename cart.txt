@@ -1,0 +1,7 @@
+cart_id,product_id,user_id,quntity,status,order_status
+1,1,1,1,1,0
+2,2,1,1,1,1
+4,2,2,1,0,1
+5,2,1,1,1,1
+6,2,1,1,1,1
+7,1,1,1,1,1
