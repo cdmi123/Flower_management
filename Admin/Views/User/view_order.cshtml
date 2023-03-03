@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewData["Title"] = "view_order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumb Area Start Here -->
+<div class="breadcrumbs-area position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="breadcrumb-content position-relative section-content">
+                    <h3 class="title-3">Shop Fullwidth</h3>
+                    <ul>
+                        <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                        <li>View Order</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End Here -->
+<!-- Shop Main Area Start Here -->
+<div class="shop-main-area">
+    <div class="container container-default custom-area">
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-custom widget-mt">
+                <div class="row shop_wrapper grid_4">
+                    @{
+                        foreach (System.Data.DataRow dr in ViewBag.u_order.Rows)
+                        {
+                            int status = Convert.ToInt32(dr["order_status"]);
+                            <div class="col-lg-3 col-md-6 col-sm-6  col-custom product-area">
+                                <div class="product-item">
+                                    <div class="single-product position-relative mr-0 ml-0">
+                                        <div class="product-image">
+                                            <a class="d-block" asp-action="product_details" asp-controller="Home">
+                                                <img src="~/productimage/@dr["p_image"].ToString()" alt="" class="product-image-1 w-100">
+                                                <img src="~/productimage/@dr["p_image"].ToString()" alt="" class="product-image-2 position-absolute w-100">
+                                            </a>
+
+                                            @if (status == 1)
+                                            {
+                                                <span class="onsale">Confirm!</span>
+                                            }
+                                            else if(status == 2)
+                                            {
+                                                <span class="onsale">Decline!</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="onsale">Pending!</span>
+                                            }
+
+                                         
+                                           
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-title">
+                                                <h4 class="title-2"> <a href="product-details.html">@dr["p_name"].ToString()</a></h4>
+                                            </div>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price ">@dr["p_price"].ToString()</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content-listview">
+                                            <div class="product-title">
+                                                <h4 class="title-2"> <a href="product-details.html">@dr["p_name"].ToString()</a></h4>
+                                            </div>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="regular-price ">@dr["p_price"].ToString()</span>
+                                            </div>
+                                            <p class="desc-content">@dr["p_description"].ToString()</p>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+
+                </div>
+                <!-- Shop Wrapper End -->
+                <!-- Bottom Toolbar Start -->
+                <div class="row">
+                    <div class="col-sm-12 col-custom">
+                        <div class="toolbar-bottom">
+                            <div class="pagination">
+                                <ul>
+                                    <li class="current">1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li class="next"><a href="#">next</a></li>
+                                    <li><a href="#">&gt;&gt;</a></li>
+                                </ul>
+                            </div>
+                            <p class="desc-content text-center text-sm-right mb-0">Showing 1 - 12 of 34 result</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Toolbar End -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop Main Area End Here -->
+
