@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfontd41d.eot"
     },
     {
+      "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\assets\\images\\QrCode.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\QrCode.jpeg"
+    },
+    {
       "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\assets\\images\\about\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\about\\1.jpg"
     },
@@ -8849,12 +8853,20 @@
       "PackagePath": "staticwebassets\\productImage\\5.jpg"
     },
     {
+      "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\productImage\\flowerbox.jpeg",
+      "PackagePath": "staticwebassets\\productImage\\flowerbox.jpeg"
+    },
+    {
       "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\1-1.jpg",
       "PackagePath": "staticwebassets\\sliderimage\\1-1.jpg"
     },
     {
       "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\1-2.jpg",
       "PackagePath": "staticwebassets\\sliderimage\\1-2.jpg"
+    },
+    {
+      "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\photo1.png",
+      "PackagePath": "staticwebassets\\sliderimage\\photo1.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Admin.Microsoft.AspNetCore.StaticWebAssets.props",

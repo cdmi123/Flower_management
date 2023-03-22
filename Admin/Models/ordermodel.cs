@@ -61,12 +61,13 @@ namespace Admin.Models
         {
             SqlCommand cmd1 = new SqlCommand("update orders set status='"+status+"' where o_id=" + user_id, con);
             con.Open();
-
-            
+            cmd1.ExecuteNonQuery();
             con.Close();
-            SqlCommand cmd = new SqlCommand("update cart set order_status='" + status + "' where user_id=" + id, con);
 
-            return cmd1.ExecuteNonQuery() ;
+
+            SqlCommand cmd = new SqlCommand("update cart set order_status='" + status + "' where user_id=" + id, con);
+            con.Open();
+            return cmd.ExecuteNonQuery() ;
         }
 
         public DataSet user_order(int user_id)

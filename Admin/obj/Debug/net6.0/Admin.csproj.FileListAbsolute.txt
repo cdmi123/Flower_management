@@ -251,3 +251,4 @@ E:\work\Bhumi Asp.net\Flower\Admin\Admin\bin\Debug\net6.0\runtimes\unix\lib\netc
 E:\work\Bhumi Asp.net\Flower\Admin\Admin\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\work\Bhumi Asp.net\Flower\Admin\Admin\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\work\Bhumi Asp.net\Flower\Admin\Admin\obj\Debug\net6.0\scopedcss\projectbundle\Admin.bundle.scp.css
+E:\work\Bhumi Asp.net\Flower\Admin\Admin\bin\Debug\net6.0\RazorPay Core.dll

@@ -4,6 +4,17 @@
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 
+@if (TempData["Slider_msg"]!="")
+{
+    <script type="text/javascript">
+
+        window.onload = function () {
+        alert("Slider Add");
+        };
+    </script>
+    TempData["Slider_msg"] = "";
+}
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">

@@ -192,6 +192,12 @@ namespace Admin.Controllers
             TempData.Clear();
             return RedirectToAction("Index");   
         }
-       
+
+        public IActionResult successfull()
+        {
+            return View();
+        }
+
+
     }
 }

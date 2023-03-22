@@ -74,7 +74,9 @@ namespace Admin.Controllers
 
             if (record > 0)
             {
+                TempData["Slider_msg"] = "Add_slider";
                 return RedirectToAction("Add_slider");
+
             }
             else
             {
@@ -173,12 +175,9 @@ namespace Admin.Controllers
         [HttpGet]
         public IActionResult logout()
         {
-            TempData.Remove("Admin_id");
-            TempData.Remove("Admin_name");
-            TempData.Remove("Admin_email");
+            TempData.Clear();   
 
-
-            return RedirectToAction("/");
+            return RedirectToAction("Index");
         }
 
        

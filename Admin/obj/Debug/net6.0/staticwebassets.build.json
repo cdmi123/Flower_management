@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Qt71PXJtN6yMhRw5PZ6lxXD9cgwRgHw3H7/Opi7MYtU=",
+  "Hash": "p8bsU9830XrBoM1Efv+DMjAnNc2dPrG9TQOVlXWylO0=",
   "Source": "Admin",
   "BasePath": "_content/Admin",
   "Mode": "Default",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\small-size\\6.jpg"
+    },
+    {
+      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\assets\\images\\QrCode.jpeg",
+      "SourceId": "Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
+      "BasePath": "_content/Admin",
+      "RelativePath": "assets/images/QrCode.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\QrCode.jpeg"
     },
     {
       "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\assets\\images\\review\\1.jpg",
@@ -37638,6 +37655,23 @@
       "OriginalItemSpec": "wwwroot\\productImage\\5.jpg"
     },
     {
+      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\productImage\\flowerbox.jpeg",
+      "SourceId": "Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
+      "BasePath": "_content/Admin",
+      "RelativePath": "productImage/flowerbox.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\productImage\\flowerbox.jpeg"
+    },
+    {
       "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\1-1.jpg",
       "SourceId": "Admin",
       "SourceType": "Discovered",
@@ -37670,6 +37704,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sliderimage\\1-2.jpg"
+    },
+    {
+      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\photo1.png",
+      "SourceId": "Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
+      "BasePath": "_content/Admin",
+      "RelativePath": "sliderimage/photo1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sliderimage\\photo1.png"
     }
   ]
 }
