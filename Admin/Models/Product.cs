@@ -42,5 +42,35 @@ namespace Admin.Models
 
             return ds;
         }
+
+        public int delete_product(int id)
+        {
+            
+            SqlCommand cmd = new SqlCommand("delete from product where id=" + id, con);
+            con.Open( );
+            
+            return cmd.ExecuteNonQuery();
+        }
+
+        public DataSet update_product(int id)
+        {
+            SqlCommand cmd = new SqlCommand("select * from product where id=" + id, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            return ds;
+        }
+
+
+        public int update_product_data(string p_name, string p_des, int p_price, int p_quntity ,int id)
+        {
+            SqlCommand cmd = new SqlCommand("update [dbo].[product] set p_name='"+p_name+ "',p_description='" + p_des+"',p_price='"+p_price+"',p_quntity='"+p_quntity+"' where id="+id , con);
+            con.Open();
+
+            return cmd.ExecuteNonQuery();
+        }
+
     }
 }

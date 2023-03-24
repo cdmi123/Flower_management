@@ -31,5 +31,14 @@ namespace Admin.Models
 
             return ds;
         }
+
+
+        public int delete_slider(int id)
+        {
+            SqlCommand cmd = new SqlCommand("delete from slider where id=" + id, con);
+            con.Open();
+
+            return cmd.ExecuteNonQuery();
+        }
     }
 }

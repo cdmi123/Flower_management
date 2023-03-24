@@ -1,4 +1,5 @@
 ﻿using Admin.Models;
+using Flower_Management.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
@@ -17,8 +18,9 @@ namespace Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(Product pm,RegisterModel rm,slidermodel sm)
         {
+
             if (TempData.Peek("Admin_id") != null)
             {
                 ViewBag.Name = TempData.Peek("Admin_name");
@@ -28,6 +30,9 @@ namespace Admin.Controllers
             {
                 ViewBag.Name = "";
             }
+
+
+
             return View();
         }
 
@@ -170,6 +175,39 @@ namespace Admin.Controllers
             }
             
             return Redirect("View_Order");
+        }
+
+        [HttpGet]
+        public IActionResult delete_product(Product pm, int product_id)
+        {
+            pm.delete_product(product_id);
+            return RedirectToAction("View_product");
+        }
+
+        [HttpGet]
+        public IActionResult delete_slider(slidermodel sm, int slider_id)
+        {
+            sm.delete_slider(slider_id);
+            return RedirectToAction("View_slider");
+        }
+
+        [HttpPost]
+        public IActionResult update_product_data(Product pm)
+        {
+            int produ_id = Convert.ToInt32(TempData.Peek("product_id"));
+            int record = pm.update_product_data(pm.p_name, pm.p_description, pm.p_price, pm.p_quntity, produ_id);
+
+            return RedirectToAction("View_product");
+        }
+
+        [HttpGet]
+        public IActionResult upadte_product(Product pm, int product_id)
+        {
+            DataSet ds = pm.update_product(product_id);
+            ViewBag.update_product = ds.Tables[0];
+            TempData["product_id"] = product_id;
+
+            return View();
         }
 
         [HttpGet]

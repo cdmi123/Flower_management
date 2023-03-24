@@ -42,7 +42,6 @@
                                         <th>Description</th>
                                         <th style="width: 250px">Image</th>
                                         <th>Delete</th>
-                                        <th>Update</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -58,12 +57,8 @@
                                                 <td><img src="~/sliderimage/@dr["image"].ToString()" width="250px" height="100px"/></td>
 
                                                 <td>
-                                                    @Html.ActionLink("Delete", "update_services_status", new { services_id = dr["id"].ToString() },new { @class = "text-danger"})
+                                                    @Html.ActionLink("Delete", "delete_slider", new { slider_id = dr["id"].ToString() },new { @class = "text-danger"})
                                                 </td>
-
-                                                <td>
-                                                    @Html.ActionLink("Update", "update_services_status", new { services_id = dr["id"].ToString() },new { @class = "text-success"})
-                                                    </td>
                                             </tr>
                                             cnt++;
                                         }

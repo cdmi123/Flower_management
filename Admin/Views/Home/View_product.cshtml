@@ -63,11 +63,11 @@
                                                 <td><img src="~/productimage/@dr["p_image"].ToString()" width="100px" height="100px" /></td>
 
                                                 <td>
-                                                    @Html.ActionLink("Delete", "update_services_status", new { services_id = dr["id"].ToString() },new { @class = "text-danger"})
+                                                    @Html.ActionLink("Delete", "delete_product", new { product_id = dr["id"].ToString() },new { @class = "text-danger"})
                                                 </td>
 
                                                 <td>
-                                                    @Html.ActionLink("Update", "update_services_status", new { services_id = dr["id"].ToString() },new { @class = "text-success"})
+                                                    @Html.ActionLink("Update", "upadte_product", new { product_id = dr["id"].ToString() },new { @class = "text-success"})
                                                 </td>
                                             </tr>
                                             cnt++;

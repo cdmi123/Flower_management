@@ -8857,6 +8857,14 @@
       "PackagePath": "staticwebassets\\productImage\\flowerbox.jpeg"
     },
     {
+      "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\productImage\\photo3.jpg",
+      "PackagePath": "staticwebassets\\productImage\\photo3.jpg"
+    },
+    {
+      "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\productImage\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\productImage\\prod-1.jpg"
+    },
+    {
       "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\1-1.jpg",
       "PackagePath": "staticwebassets\\sliderimage\\1-1.jpg"
     },
@@ -8867,6 +8875,10 @@
     {
       "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\photo1.png",
       "PackagePath": "staticwebassets\\sliderimage\\photo1.png"
+    },
+    {
+      "Id": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\photo2.png",
+      "PackagePath": "staticwebassets\\sliderimage\\photo2.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Admin.Microsoft.AspNetCore.StaticWebAssets.props",
