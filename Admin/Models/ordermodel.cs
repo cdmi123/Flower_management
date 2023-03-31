@@ -17,6 +17,7 @@ namespace Admin.Models
         public string email { get; set; }
         public string phoneno { get; set; }
         public int user_id { get; set; }
+        public string btn { get; set; }
 
         SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS;Database=Flower_management;User Id=sa;pwd=cdmi@3420");
 
@@ -37,7 +38,7 @@ namespace Admin.Models
 
         public DataSet get_order(int user_id)
         {
-            SqlCommand cmd = new SqlCommand("SELECT orders.*,product.p_image,product.p_name,cart.* FROM orders JOIN cart ON orders.user_id = cart.user_id JOIN product ON product.id = cart.product_id where cart.status = 1 and orders.status=0", con);
+            SqlCommand cmd = new SqlCommand("SELECT orders.*,product.p_image,product.p_name,cart.* FROM orders JOIN cart ON orders.user_id = cart.user_id JOIN product ON product.id = cart.product_id where cart.order_status = 0 and orders.status=0", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
 

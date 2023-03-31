@@ -30,7 +30,7 @@ namespace Admin.Controllers
             DataSet ds1 = pm.get_product();
             ViewBag.product = ds1.Tables[0];
 
-          int user_id =   Convert.ToInt32(TempData.Peek("user_id"));
+          int user_id = Convert.ToInt32(TempData.Peek("user_id"));
 
 
             DataSet ds2 = cm.get_cart(user_id);
@@ -140,10 +140,16 @@ namespace Admin.Controllers
            int data =  om.place_order(om.cname,om.fname,om.lname,om.com_name,om.address,om.city_name, om.state,om.code,om.email,om.phoneno,user_id);
 
 
-
             if (data > 0)
             {
-                return Redirect("successfull");
+                if (om.btn == "Order COD")
+                {
+                      return Redirect("success");
+                }
+                else
+                {
+                    return Redirect("successfull");
+                }
             }
             else 
             {
@@ -194,6 +200,12 @@ namespace Admin.Controllers
         }
 
         public IActionResult successfull()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult success()
         {
             return View();
         }

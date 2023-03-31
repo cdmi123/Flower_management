@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Home/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Home/upadte_product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1cGFkdGVfcHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Shared/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Shared/_adminLayout.cshtml]
@@ -110,6 +118,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/User/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/User/success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxzdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/User/successfull.cshtml]
