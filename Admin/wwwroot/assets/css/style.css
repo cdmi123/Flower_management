@@ -6381,6 +6381,7 @@ mark {
 
 .categories-img > a img {
   width: 100%;
+  height: 250px;
 }
 
 .categories-img > a:hover {

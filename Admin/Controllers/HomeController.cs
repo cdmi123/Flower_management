@@ -6,6 +6,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Net.Http.Headers;
 
+
 namespace Admin.Controllers
 {
     public class HomeController : Controller
@@ -18,7 +19,7 @@ namespace Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(Product pm,RegisterModel rm,slidermodel sm)
+        public IActionResult Index(Product pm,RegisterModel rm,slidermodel sm )
         {
 
             if (TempData.Peek("Admin_id") != null)
@@ -100,8 +101,12 @@ namespace Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Add_product()
+        public IActionResult Add_product(category_model cam)
         {
+
+            DataSet cd = cam.get_category();
+            ViewBag.category = cd.Tables[0];
+
             return View();
         }
 
@@ -117,7 +122,7 @@ namespace Admin.Controllers
             }
 
 
-            int record = pm.product_add(pm.p_name, pm.p_description,pm.p_price,pm.p_quntity ,imgname);
+            int record = pm.product_add(pm.p_name, pm.p_description,pm.p_price,pm.p_quntity ,imgname,pm.p_category);
 
             if (record > 0)
             {
@@ -174,6 +179,10 @@ namespace Admin.Controllers
                 om.update_status("2", Decline_id , user_id);
             }
             
+
+
+
+
             return Redirect("View_Order");
         }
 
@@ -210,12 +219,6 @@ namespace Admin.Controllers
             return View();
         }
 
-
-
-      
-
-
-
         [HttpGet]
         public IActionResult logout()
         {
@@ -224,8 +227,27 @@ namespace Admin.Controllers
             return RedirectToAction("Index");
         }
 
-       
 
+        public IActionResult add_category()
+        {
+            return  View();
+        }
+
+        [HttpPost]
+        public IActionResult add_category(category_model cm)
+        {
+            var cat_name = cm.category_name;
+
+            var result = cm.add_cat(cat_name);
+
+            if (result > 0)
+            {
+                RedirectToAction("add_category");
+            }
+
+
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

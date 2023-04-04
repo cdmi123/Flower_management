@@ -118,49 +118,54 @@
                                                  </span>
                                          }
                                     </a>
-                                    <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
+                                @if (TempData.Peek("user_id") != null)
+                                    {
+                                        <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
 
-                                        @{
-                                            if(ViewBag.Cart != null)
-                                            {
-                                                int total = 0;
-                                                foreach (System.Data.DataRow dr in ViewBag.Cart.Rows)
+                                            @{
+                                                if (ViewBag.Cart != null)
                                                 {
+                                                    int total = 0;
+                                                    foreach (System.Data.DataRow dr in ViewBag.Cart.Rows)
+                                                    {
 
-                                                    String price =  dr["p_price"].ToString();
+                                                        String price = dr["p_price"].ToString();
 
-                                                    total = total + int.Parse(price);
+                                                        total = total + int.Parse(price);
 
-                                                    ViewBag.total = total;
+                                                        ViewBag.total = total;
 
-                                                    <div class="single-cart-item">
-                                            <div class="cart-img">
-                                                <a href="cart.html"><img src="~/productImage/@dr["p_image"].ToString()" alt=""></a>
-                                            </div>
-                                            <div class="cart-text">
-                                                <h5 class="title"><a href="cart.html">@dr["p_name"].ToString()</a></h5>
-                                                <div class="cart-text-btn">
-                                                    <div class="cart-qty">
-                                                        <span>@dr["quntity"].ToString() ×</span>
-                                                        <span class="cart-price">@dr["p_price"].ToString()</span>
-                                                    </div>
-                                                    <button type="button"><i class="ion-trash-b"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                        <div class="single-cart-item">
+                                                            <div class="cart-img">
+                                                                <a href="cart.html"><img src="~/productImage/@dr["p_image"].ToString()" alt=""></a>
+                                                            </div>
+                                                            <div class="cart-text">
+                                                                <h5 class="title"><a href="cart.html">@dr["p_name"].ToString()</a></h5>
+                                                                <div class="cart-text-btn">
+                                                                    <div class="cart-qty">
+                                                                        <span>@dr["quntity"].ToString() ×</span>
+                                                                        <span class="cart-price">@dr["p_price"].ToString()</span>
+                                                                    </div>
+                                                                    <button type="button"><i class="ion-trash-b"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    }
+                                                }
                                             }
-                                        }
-                                        }
-                                      
-                                        <div class="cart-price-total d-flex justify-content-between">
-                                            <h5>Total :</h5>
-                                            <h5>@ViewBag.total</h5>
+
+                                            <div class="cart-price-total d-flex justify-content-between">
+                                                <h5>Total :</h5>
+                                                <h5>@ViewBag.total</h5>
+                                            </div>
+                                            <div class="cart-links d-flex justify-content-between">
+                                                <a class="btn product-cart button-icon flosun-button dark-btn" asp-action="cart" asp-controller="User">View cart</a>
+                                                <a class="btn flosun-button secondary-btn rounded-0" asp-action="checkout" asp-controller="User">Checkout</a>
+                                            </div>
+
+
                                         </div>
-                                        <div class="cart-links d-flex justify-content-between">
-                                            <a class="btn product-cart button-icon flosun-button dark-btn" asp-action="cart" asp-controller="User">View cart</a>
-                                            <a class="btn flosun-button secondary-btn rounded-0" asp-action="checkout" asp-controller="User">Checkout</a>
-                                        </div>
-                                    </div>
+                                    }
                                 </li>
                                 <li class="sidemenu-wrap">
                                     <a href="#"><i class="fa fa-search"></i> </a>

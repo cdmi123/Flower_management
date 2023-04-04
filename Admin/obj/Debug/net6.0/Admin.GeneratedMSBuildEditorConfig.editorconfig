@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\work\Bhumi Asp.net\Flower\Admin\Admin
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Home/add_category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRfY2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/work/Bhumi Asp.net/Flower/Admin/Admin/Views/Home/Add_product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRfcHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -55,6 +55,18 @@
                                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" name="p_quntity">
                                 </div>
                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Select Category</label>
+                                        <select class="form-control" name="p_category">
+                                            <option selected disabled>Select Category</option>
+
+                                        @foreach(System.Data.DataRow dr in ViewBag.category.Rows)
+                                        {
+                                            <option value="@dr["cat_name"].ToString()">@dr["cat_name"].ToString()</option>
+                                        }
+
+                                        </select>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleInputFile">File input</label>
                                     <div class="input-group">
                                         <div class="custom-file">

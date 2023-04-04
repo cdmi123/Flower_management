@@ -263,7 +263,7 @@
                 </li>
               </ul>
             </li>
-                        <li class="nav-item">
+                <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
@@ -286,6 +286,30 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Manage Category
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-action="add_category" asp-controller="Home" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add Category</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="view_category" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View Category</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
           </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3TWXj2QNpGQcJpZB9Pid0rL/qG6XOiLt1hcPYTxNrXA=",
+  "Hash": "FtjCNG0ngX1t6AgaAwd4cuM50Aloza+YV5tfiT1p0+s=",
   "Source": "Admin",
   "BasePath": "_content/Admin",
   "Mode": "Default",
@@ -37655,6 +37655,23 @@
       "OriginalItemSpec": "wwwroot\\productImage\\5.jpg"
     },
     {
+      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\productImage\\download.jpeg",
+      "SourceId": "Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
+      "BasePath": "_content/Admin",
+      "RelativePath": "productImage/download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\productImage\\download.jpeg"
+    },
+    {
       "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\productImage\\flowerbox.jpeg",
       "SourceId": "Admin",
       "SourceType": "Discovered",
@@ -37706,6 +37723,23 @@
       "OriginalItemSpec": "wwwroot\\productImage\\prod-1.jpg"
     },
     {
+      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\.png",
+      "SourceId": "Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
+      "BasePath": "_content/Admin",
+      "RelativePath": "sliderimage/.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sliderimage\\.png"
+    },
+    {
       "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\1-1.jpg",
       "SourceId": "Admin",
       "SourceType": "Discovered",
@@ -37721,57 +37755,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sliderimage\\1-1.jpg"
-    },
-    {
-      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\1-2.jpg",
-      "SourceId": "Admin",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
-      "BasePath": "_content/Admin",
-      "RelativePath": "sliderimage/1-2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sliderimage\\1-2.jpg"
-    },
-    {
-      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\photo1.png",
-      "SourceId": "Admin",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
-      "BasePath": "_content/Admin",
-      "RelativePath": "sliderimage/photo1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sliderimage\\photo1.png"
-    },
-    {
-      "Identity": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\sliderimage\\photo2.png",
-      "SourceId": "Admin",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\work\\Bhumi Asp.net\\Flower\\Admin\\Admin\\wwwroot\\",
-      "BasePath": "_content/Admin",
-      "RelativePath": "sliderimage/photo2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sliderimage\\photo2.png"
     }
   ]
 }

@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "RazorPay.Core": {
               "target": "Package",
               "version": "[1.0.2, )"

@@ -12,10 +12,11 @@ namespace Admin.Models
         public int p_price { get; set;}
         public int p_quntity { get; set; }
         public string p_image { get; set; }
+        public string p_category { get; set; }
 
-        public int product_add(string p_name, string p_des, int p_price , int p_quntity , string p_image)
+        public int product_add(string p_name, string p_des, int p_price , int p_quntity , string p_image, string p_category)
         {
-            SqlCommand cmd = new SqlCommand("insert into [dbo].[product](p_name,p_description,p_price,p_quntity,p_image)values('" + p_name + "','" + p_des + "','" + p_price + "','"+ p_quntity + "','"+ p_image + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into [dbo].[product](p_name,p_description,p_price,p_quntity,p_image,p_category)values('" + p_name + "','" + p_des + "','" + p_price + "','"+ p_quntity + "','"+ p_image + "','"+p_category+"')", con);
             con.Open();
 
             return cmd.ExecuteNonQuery();
