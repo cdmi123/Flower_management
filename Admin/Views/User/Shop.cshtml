@@ -60,59 +60,24 @@
                                                 <img src="~/productimage/@dr["p_image"].ToString()" alt="" class="product-image-1 w-100">
                                                 <img src="~/productimage/@dr["p_image"].ToString()" alt="" class="product-image-2 position-absolute w-100">
                                             </a>
-                                            <span class="onsale">Sale!</span>
-                                            <div class="add-action d-flex flex-column position-absolute">
-                                                <a href="compare.html" title="Compare">
-                                                    <i class="lnr lnr-sync" data-toggle="tooltip" data-placement="left" title="Compare"></i>
-                                                </a>
-                                                <a href="wishlist.html" title="Add To Wishlist">
-                                                    <i class="lnr lnr-heart" data-toggle="tooltip" data-placement="left" title="Wishlist"></i>
-                                                </a>
-                                                <a href="#exampleModalCenter" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                                    <i class="lnr lnr-eye" data-toggle="tooltip" data-placement="left" title="Quick View"></i>
-                                                </a>
-                                            </div>
                                         </div>
                                         <div class="product-content">
                                             <div class="product-title">
                                                 <h4 class="title-2"> <a href="product-details.html">@dr["p_name"].ToString()</a></h4>
                                             </div>
-                                            <div class="product-rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
                                             <div class="price-box">
                                                 <span class="regular-price ">@dr["p_price"].ToString()</span>
                                             </div>
-                                            <a href="cart.html" class="btn product-cart">Add to Cart</a>
+                                            @Html.ActionLink("Add To Cart", "add_to_cart", new { product_id = dr["id"].ToString() , user_id=TempData.Peek("user_id")},new{ @class = "text-light bg-dark product-cart"})
                                         </div>
                                         <div class="product-content-listview">
                                             <div class="product-title">
                                                 <h4 class="title-2"> <a href="product-details.html">@dr["p_name"].ToString()</a></h4>
                                             </div>
-                                            <div class="product-rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
                                             <div class="price-box">
                                                 <span class="regular-price ">@dr["p_price"].ToString()</span>
                                             </div>
                                             <p class="desc-content">@dr["p_description"].ToString()</p>
-                                            <div class="button-listview">
-                                                <a href="cart.html" class="btn product-cart button-icon flosun-button dark-btn" data-toggle="tooltip" data-placement="top" title="Add to Cart"> <span>Add to Cart</span> </a>
-                                                <a class="list-icon" href="compare.html" title="Compare">
-                                                    <i class="lnr lnr-sync" data-toggle="tooltip" data-placement="top" title="Compare"></i>
-                                                </a>
-                                                <a class="list-icon" href="wishlist.html" title="Add To Wishlist">
-                                                    <i class="lnr lnr-heart" data-toggle="tooltip" data-placement="top" title="Wishlist"></i>
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -53,8 +53,25 @@ namespace Admin.Controllers
             return RedirectToAction("dashboard");
         }
 
-        public IActionResult dashboard()
+        public IActionResult dashboard(Product pm,ordermodel om)
         {
+            DataSet ds = pm.get_product();
+
+            DataSet dom = om.get_all_order();
+
+            DataSet com = om.get_com_order();
+
+            DataSet ao = om.get_order();
+
+
+            TempData["Total_Product"] = ds.Tables[0].Rows.Count;
+            TempData["Total_order"] = dom.Tables[0].Rows.Count;
+            TempData["Total_com_order"] = com.Tables[0].Rows.Count;
+            TempData["Total_order_in"] = ao.Tables[0].Rows.Count;
+
+
+
+
             return View();
         }
 
@@ -141,6 +158,8 @@ namespace Admin.Controllers
         {
             DataSet ds = pm.get_product();
             ViewBag.product = ds.Tables[0];
+
+            TempData["Total_Product"] = ds.Tables[0].Rows.Count;
 
             return View();
         }

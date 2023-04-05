@@ -47,6 +47,39 @@ namespace Admin.Models
             return ds;
         }
 
+        public DataSet get_all_order()
+        {
+            SqlCommand cmd = new SqlCommand("select * from orders where status=0", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            return ds;
+        }
+
+        public DataSet get_com_order()
+        {
+            SqlCommand cmd = new SqlCommand("select * from orders where status=1", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            return ds;
+        }
+
+        public DataSet get_order()
+        {
+            SqlCommand cmd = new SqlCommand("select * from orders", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            return ds;
+        }
+
         public DataSet get_c_order(int user_id)
         {
             SqlCommand cmd = new SqlCommand("SELECT orders.*,product.p_image,product.p_name,cart.* FROM orders JOIN cart ON orders.user_id = cart.user_id JOIN product ON product.id = cart.product_id where cart.status = 1 and orders.status=1", con);
